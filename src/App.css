@@ -46,32 +46,18 @@ body {
 }
 
 .card button {
-  position: relative;
-  z-index: 1;
-  padding: 0.4rem 2rem;
   color: #333;
-  border: 1px solid #777;
-  background-color: transparent;
-  font-weight: 400;
-  border-radius: 5rem;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.card button::before {
-  position: absolute;
-  z-index: -1;
-  content: "";
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  transform: scale(0);
-  transform-origin: top left;
-  background-color: yellow;
-  transition: 0.3s ease-in-out;
-}
-
-.card button:hover::before {
-  transform: scale(1);
+  font-weight: bold;
+  background: #d9f02b;
+  background-image: -webkit-linear-gradient(top, #d9f02b, #d6db40);
+  background-image: -moz-linear-gradient(top, #d9f02b, #d6db40);
+  background-image: -ms-linear-gradient(top, #d9f02b, #d6db40);
+  background-image: -o-linear-gradient(top, #d9f02b, #d6db40);
+  background-image: linear-gradient(to bottom, #d9f02b, #d6db40);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+  border: none;
 }
