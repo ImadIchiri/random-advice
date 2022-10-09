@@ -8,6 +8,11 @@ html {
   font-family: 20px;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -25,16 +30,45 @@ body {
 }
 
 .card {
+  position: relative;
   width: 100%;
   max-width: 80%;
   min-width: 250px;
-  padding: 3rem 2rem;
+  padding: 3.5rem 2rem 3rem;
   border-radius: 0.5rem;
   background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.card .topIcons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.card .favorite {
+}
+
+.card .topIcons svg,
+.card .topIcons .favorite svg {
+  color: #333;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.card .topIcons .favorite svg {
+  color: #f00;
+  margin-top: 3px;
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
 }
 
 .card h1 {
@@ -45,7 +79,7 @@ body {
   text-align: center;
 }
 
-.card button {
+.card button.newAdviceBtn {
   color: #333;
   font-weight: bold;
   background: #d9f02b;
@@ -60,4 +94,5 @@ body {
   font-size: 1rem;
   padding: 10px 20px 10px 20px;
   border: none;
+  cursor: pointer;
 }
